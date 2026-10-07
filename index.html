@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zvara — Digital Agency & Creative Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">ZVARA<span>.</span></a>
+      
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#why-us" class="nav-link">Why Us</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <span class="badge"><i class="fa-solid fa-bolt"></i> Next-Gen Digital Agency</span>
+        <h1>We Build Bold Digital Experiences.</h1>
+        <p>Zvara melayani pembuatan produk digital kelas dunia mulai dari Web Development, Mobile Apps, hingga Scaling Brand Identity Anda.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-primary">Start a Project <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#projects" class="btn btn-outline">View Our Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Layanan Kami</h2>
+        <p>Solusi komprehensif untuk mentransformasi ide Anda menjadi produk digital unggulan.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Situs web berperforma tinggi, responsif, SEO-friendly, dan scalable untuk kebutuhan bisnis modern.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+          <h3>Mobile App Development</h3>
+          <p>Aplikasi iOS & Android dengan antarmuka mulus dan arsitektur backend yang kokoh.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Desain pengalaman pengguna bernilai tinggi berbasis riset mendalam dan estetika visual.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3>Digital Marketing & SEO</h3>
+          <p>Strategi pertumbuhan berbasis data untuk meningkatkan trafik, konversi, dan ROI brand Anda.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Featured Projects</h2>
+        <p>Karya terbaik kami dalam membantu klien mencapai potensi digital secara maksimal.</p>
+      </div>
+
+      <!-- Portfolio Filter Buttons -->
+      <div class="portfolio-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">Mobile App</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop" alt="E-Commerce Ecosystem">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Web Development</span>
+            <h3>Fintech Dashboard Platform</h3>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="app">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&auto=format&fit=crop" alt="Mobile App">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Mobile App</span>
+            <h3>Health & Fitness Tracker</h3>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="design">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=600&auto=format&fit=crop" alt="UI/UX Design">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">UI/UX Design</span>
+            <h3>SaaS Growth Portal</h3>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&auto=format&fit=crop" alt="Analytics Web">
+          </div>
+          <div class="project-info">
+            <span class="project-cat">Web Development</span>
+            <h3>AI Analytics Platform</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Mengapa Memilih Zvara?</h2>
+        <p>Kami memadukan kreativitas tanpa batas dan metodologi teknis terkini.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-rocket"></i>
+          <h3>High Performance</h3>
+          <p>Optimasi kode dan infrastruktur berkecepatan tinggi tanpa kompromi.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>Enterprise Security</h3>
+          <p>Standar keamanan tinggi untuk menjamin kerahasiaan & integritas data.</p>
+        </div>
+        <div class="feature-card reveal">
+          <i class="fa-solid fa-headset"></i>
+          <h3>Dedicated Support</h3>
+          <p>Dukungan teknis dan pemeliharaan berkesinambungan 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Kata Klien Kami</h2>
+        <p>Pengalaman nyata dari para partner yang telah tumbuh bersama Zvara.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p class="testi-text">"Zvara merevolusi platform e-commerce kami. Konversi penjualan meningkat 150% dalam kurun waktu 3 bulan setelah relaunch!"</p>
+          <div class="testi-user">
+            <div class="user-avatar">AD</div>
+            <div>
+              <h4>Alexander Dermawan</h4>
+              <span>CEO, Nexus Tech</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p class="testi-text">"Tim yang sangat profesional dan komunikatif. Hasil desain UI/UX aplikasi mobile kami mendapat pujian dari para pengguna."</p>
+          <div class="testi-user">
+            <div class="user-avatar">SN</div>
+            <div>
+              <h4>Siti Nurhaliza</h4>
+              <span>Product Lead, Healthify</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="pricing section" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Paket Harga</h2>
+        <p>Pilihan fleksibel yang dirancang sesuai dengan skala dan kebutuhan bisnis Anda.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <h3>Starter</h3>
+          <div class="price">Rp 5.000.000 <span>/ project</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Standard Responsive Web</li>
+            <li><i class="fa-solid fa-check"></i> UI/UX Design System</li>
+            <li><i class="fa-solid fa-check"></i> Basic SEO Setup</li>
+            <li><i class="fa-solid fa-check"></i> 1 Month Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">Pilih Paket</a>
+        </div>
+
+        <div class="pricing-card popular reveal">
+          <span class="pop-badge">Most Popular</span>
+          <h3>Professional</h3>
+          <div class="price">Rp 15.000.000 <span>/ project</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Custom Web / Mobile App</li>
+            <li><i class="fa-solid fa-check"></i> Premium UI/UX Animation</li>
+            <li><i class="fa-solid fa-check"></i> Full SEO & Marketing Strategy</li>
+            <li><i class="fa-solid fa-check"></i> API & Payment Integration</li>
+            <li><i class="fa-solid fa-check"></i> 6 Months Maintenance</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-full">Pilih Paket</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Enterprise</h3>
+          <div class="price">Custom <span>/ quote</span></div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Full-Scale Digital Ecosystem</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Team & Tech Lead</li>
+            <li><i class="fa-solid fa-check"></i> Enterprise SLA & Security</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-full">Hubungi Kami</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Frequently Asked Questions</h2>
+        <p>Pertanyaan umum seputar kolaborasi dan alur kerja bersama Zvara.</p>
+      </div>
+      <div class="faq-accordion">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3>Berapa lama estimasi pengerjaan satu project?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Estimasi waktu bervariasi bergantung pada skala proyek. Pembuatan landing page membutuhkan waktu 1-2 minggu, sementara aplikasi kompleks memerlukan 6-12 minggu.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3>Apakah Zvara menyediakan layanan pemeliharaan setelah rilis?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Ya, kami memberikan garansi serta paket maintenance rutin mencakup pembaruan keamanan, optimasi sistem, dan server management.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h3>Bagaimana alur pembayaran kerja sama di Zvara?</h3>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Sistem pembayaran terbagi menjadi Down Payment (DP) diawal proyek, pembayaran milestone bertahap, dan pelunasan saat sistem siap dideploy secara publik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <h2>Mari Memulai Proyek Bersama Zvara</h2>
+          <p>Siap mentransformasi bisnis Anda? Hubungi kami untuk konsultasi awal secara gratis.</p>
+          <div class="info-list">
+            <div class="info-item"><i class="fa-solid fa-envelope"></i> hello@zvara.digital</div>
+            <div class="info-item"><i class="fa-solid fa-phone"></i> +62 812-3456-7890</div>
+            <div class="info-item"><i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia</div>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" required placeholder="Masukkan nama Anda">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required placeholder="nama@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan / Brief Proyek</label>
+              <textarea id="message" rows="4" required placeholder="Jelaskan kebutuhan proyek Anda..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Kirim Pesan <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2026 ZVARA Digital Agency. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
